@@ -39,6 +39,7 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Oa-rc-lqp"/>
+                                    <segue destination="w4A-4I-a0d" kind="show" id="Nop-AT-cde"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,6 +64,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="642" y="104"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d6e-3J-mjb">
+            <objects>
+                <viewController id="w4A-4I-a0d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjQ-NX-kKl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.52776328490000002" green="1" blue="0.98064367559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="QbI-ya-zdp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63e-ZE-66c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7xc-dx-6RH">
