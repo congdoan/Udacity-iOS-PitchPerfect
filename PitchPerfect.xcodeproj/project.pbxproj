@@ -43,6 +43,7 @@
 		F4B53EC61F876E4A007DB555 = {
 			isa = PBXGroup;
 			children = (
+				F44D04041F8B462100960625 /* README.md */,
 				F4B53ED11F876E4A007DB555 /* PitchPerfect */,
 				F4B53ED01F876E4A007DB555 /* Products */,
 			);
@@ -67,7 +68,6 @@
 				F4B53ED91F876E4A007DB555 /* Assets.xcassets */,
 				F4B53EDB1F876E4A007DB555 /* LaunchScreen.storyboard */,
 				F4B53EDE1F876E4A007DB555 /* Info.plist */,
-				F44D04041F8B462100960625 /* README.md */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
