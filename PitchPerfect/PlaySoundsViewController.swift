@@ -11,17 +11,19 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
     
+    // MARK: - Audio properties
     var recordedAudioURL: URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
+    // MARK: - Playback button types (raw values correspond to button tags)
     enum ButtonType: Int {
-        case slow = 0, fast, highpitch, lowpitch, echo, reverb
+        case slowrate = 0, fastrate, highpitch, lowpitch, echo, reverb
     }
     
-    // MARK: Outlets
+    // MARK: - IBOutlets
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
     @IBOutlet weak var highPitchButton: UIButton!
@@ -30,12 +32,12 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
 
-    // MARK: Actions
+    // MARK: - IBActions
     @IBAction func playSoundForButton(_ sender: UIButton) {
         switch ButtonType(rawValue: sender.tag)! {
-        case .slow:
+        case .slowrate:
             playSound(rate: 0.5)
-        case .fast:
+        case .fastrate:
             playSound(rate: 1.5)
         case .highpitch:
             playSound(pitch: 1000)
@@ -54,7 +56,7 @@ class PlaySoundsViewController: UIViewController {
         stopAudio()
     }
     
-
+    // MARK: - ViewController lifecycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
